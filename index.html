@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Data Pekerja</title>
+</head>
+<body style="color: rgb(255, 255, 255); background-color: #6495ED ;">
+    <div style="border: 5px solid rgb(242, 242, 242); "><img src="carousel-1.jpg" alt="unactive photo" width="1525px" height="100px"></div>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5"><strong>Data Pekerja</strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="pekerja-form" class="row justify-content-center mb-4">
+                <div class="col-10 col-md-8" mb-3>
+                    <label for="firstName">Name</label>
+                    <input class="form-control" id="firstName" type="text" placeholder="Masukkan Name">
+                </div>
+                <div class="col-10 col-md-8" mb-3>
+                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                    <input class="form-control" id="jenis_kelamin" type="text" placeholder="Masukkan Jenis Kelamin">
+                </div>
+                <div class="col-10 col-md-8" mb-3>
+                    <label for="alamat">Alamat</label>
+                    <input class="form-control" id="alamat" type="text" placeholder="Masukkan alamat">
+                </div>
+                <div class="col-10 col-md-8" style="display: flex; width: 100%; justify-content: center; margin-top: 10px;">
+                    <input class="btn btn-success add-btn" type="submit" value="Submit">
+                </div>
+            </form>
+            <div class="col-12 col-md-10 mt-5">
+                <table class="table table-striped table-danger;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Alamat</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pekerja-list">
+                        <tr>
+                            <td>Gaspar Ferdiansyah</td>
+                            <td>Laki - Laki</td>
+                            <td>Ciracas</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
